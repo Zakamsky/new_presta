@@ -1,0 +1,220 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+#products .product-miniature, .featured-products .product-miniature, .product-accessories .product-miniature, .product-miniature .product-miniature {
+    margin: 0;
+}
+
+#products .thumbnail-container,
+.featured-products .thumbnail-container,
+.product-accessories .thumbnail-container,
+.product-miniature .thumbnail-container{
+    width: 277px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: none;
+    /*border-left: 1px solid #e8e9ea;*/
+
+}
+#products:not(:first-child) .thumbnail-container,
+.featured-products:not(:first-child) .thumbnail-container,
+.product-accessories:not(:first-child) .thumbnail-container,
+.product-miniature:not(:first-child) .thumbnail-container{
+    border-left: 1px solid #e8e9ea;
+}
+
+#products .product-description,
+.featured-products .product-description,
+.product-accessories .product-description,
+.product-miniature .product-description{
+    height: 7rem;
+}
+#products .thumbnail-container:focus .highlighted-informations,
+#products .thumbnail-container:hover .highlighted-informations,
+.featured-products .thumbnail-container:focus .highlighted-informations,
+.featured-products .thumbnail-container:hover .highlighted-informations,
+.product-accessories .thumbnail-container:focus .highlighted-informations,
+.product-accessories .thumbnail-container:hover .highlighted-informations,
+.product-miniature .thumbnail-container:focus .highlighted-informations,
+.product-miniature .thumbnail-container:hover .highlighted-informations {
+    bottom: 9rem;
+}
+#products .thumbnail-container:focus .highlighted-informations.no-variants,
+#products .thumbnail-container:hover .highlighted-informations.no-variants,
+.featured-products .thumbnail-container:focus .highlighted-informations.no-variants,
+.featured-products .thumbnail-container:hover .highlighted-informations.no-variants,
+.product-accessories .thumbnail-container:focus .highlighted-informations.no-variants,
+.product-accessories .thumbnail-container:hover .highlighted-informations.no-variants,
+.product-miniature .thumbnail-container:focus .highlighted-informations.no-variants,
+.product-miniature .thumbnail-container:hover .highlighted-informations.no-variants {
+    bottom: 7.2rem;
+}
+#products .thumbnail-container:focus .product-description:after, #products .thumbnail-container:hover .product-description:after, .featured-products .thumbnail-container:focus .product-description:after, .featured-products .thumbnail-container:hover .product-description:after, .product-accessories .thumbnail-container:focus .product-description:after, .product-accessories .thumbnail-container:hover .product-description:after, .product-miniature .thumbnail-container:focus .product-description:after, .product-miniature .thumbnail-container:hover .product-description:after{
+    content: none;
+}
+
+#products .variant-links, .featured-products .variant-links, .product-accessories .variant-links, .product-miniature .variant-links{
+    top: 0;
+}
+
+#products img, .featured-products img, .product-accessories img, .product-miniature img {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+#products .product-miniature .discount-amount,
+#products .product-miniature .discount-percentage,
+#products .product-miniature .on-sale, #products .product-miniature .online-only,
+#products .product-miniature .pack, #products .product-miniature .product-flags .new,
+.featured-products .product-miniature .discount-amount, .featured-products .product-miniature .discount-percentage,
+.featured-products .product-miniature .on-sale, .featured-products .product-miniature .online-only, .featured-products .product-miniature .pack,
+.featured-products .product-miniature .product-flags .new, .product-accessories .product-miniature .discount-amount,
+.product-accessories .product-miniature .discount-percentage, .product-accessories .product-miniature .on-sale,
+.product-accessories .product-miniature .online-only, .product-accessories .product-miniature .pack,
+.product-accessories .product-miniature .product-flags .new, .product-miniature .product-miniature .discount-amount,
+.product-miniature .product-miniature .discount-percentage, .product-miniature .product-miniature .on-sale,
+.product-miniature .product-miniature .online-only, .product-miniature .product-miniature .pack,
+.product-miniature .product-miniature .product-flags .new{
+    display: none;
+    top: 0 !important;
+    left: unset;
+    padding-left: 0.5rem;
+    color: red;
+    background: transparent;
+    box-shadow: none;
+    font-weight: normal;
+    transition: 3s all
+} /* флажок новое*/
+
+#products .product-miniature .discount, .featured-products .product-miniature .discount, .product-accessories .product-miniature .discount, .product-miniature .product-miniature .discount{
+    right: 0.5rem;
+    width: 2em;
+    padding: 0.5em;
+    padding-bottom: 0;
+    /*width: 1ch;*/
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 10px;
+    font-weight: normal;
+    color: #2a2a2a;
+    background: #e8e9ea;
+    box-shadow: none;
+    margin-top: 0;
+    transition: 0.3s all
+}
+.product-miniature .discount::after{
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    border-top: 1em solid #e8e9ea;
+    border-right: 1em solid #e8e9ea;
+
+
+}
+.product-miniature .discount::before{
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    border-top: 1em solid #e8e9ea;
+    border-left: 1em solid #e8e9ea;
+
+}
+#products .thumbnail-container:focus li.product-flag.discount,
+#products .thumbnail-container:focus li.product-flag.new ,
+#products .thumbnail-container:hover li.product-flag.discount,
+#products .thumbnail-container:hover li.product-flag.new ,
+.featured-products .thumbnail-container:focus li.product-flag.discount,
+.featured-products .thumbnail-container:focus li.product-flag.new,
+.featured-products .thumbnail-container:hover li.product-flag.discount,
+.featured-products .thumbnail-container:hover li.product-flag.new ,
+.product-accessories .thumbnail-container:focus li.product-flag.discount,
+.product-accessories .thumbnail-container:focus li.product-flag.new ,
+.product-accessories .thumbnail-container:hover li.product-flag.discount,
+.product-accessories .thumbnail-container:hover li.product-flag.new ,
+.product-miniature .thumbnail-container:focus li.product-flag.discount,
+.product-miniature .thumbnail-container:focus li.product-flag.new ,
+.product-miniature .thumbnail-container:hover li.product-flag.discount,
+.product-miniature .thumbnail-container:hover li.product-flag.new{
+    display: block;
+}
+
+#products .regular-price, .featured-products .regular-price, .product-accessories .regular-price, .product-miniature .regular-price{
+    color: red;
+}
+.hover--btns{
+    display: flex;
+}
+.hvr-btn{
+    margin-left: 4px;
+    background: #e8e9ea;
+}
+
+.atc_qty{
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+}
+
+
+.simplerating-list{
+    display: block;
+    margin-top: 0.5rem;
+    padding: 1px;
+}
+
+
+
+.atc_spinner {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#products .highlighted-informations, .featured-products .highlighted-informations, .product-accessories .highlighted-informations, .product-miniature .highlighted-informations{
+    width: 277px;
+    box-shadow: none;
+}
