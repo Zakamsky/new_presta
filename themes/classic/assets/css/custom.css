@@ -31,6 +31,7 @@
 .product-miniature .product-description{
     height: 7rem;
 }
+
 #products .thumbnail-container:focus .highlighted-informations,
 #products .thumbnail-container:hover .highlighted-informations,
 .featured-products .thumbnail-container:focus .highlighted-informations,

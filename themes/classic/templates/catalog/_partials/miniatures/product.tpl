@@ -107,10 +107,10 @@
               </a>
             {/block}
             <div class="atc_div">
-                        <input name="qty" type="text" class="form-control atc_qty" value="1" onfocus="if(this.value == '1') this.value = '';" onblur="if(this.value == '') this.value = '1';"/>
-                        <button class="add_to_cart btn btn-sm hvr-btn" onclick="mypresta_productListCart.add({literal}$(this){/literal});">
-                            <i class="material-icons">add_shopping_cart</i>
-                        </button>
+                    <input name="qty" type="text" class="form-control atc_qty" value="1" onfocus="if(this.value == '1') this.value = '';" onblur="if(this.value == '') this.value = '1';"/>
+                    <button class="add_to_cart btn btn-sm hvr-btn" onclick="mypresta_productListCart.add({literal}$(this){/literal});">
+                        <i class="material-icons">add_shopping_cart</i>
+                    </button>
             </div>
         </div>
         {block name='product_variants'}
